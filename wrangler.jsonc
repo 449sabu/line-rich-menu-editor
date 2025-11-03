@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "cloudflare-d1-better-auth",
+	"name": "line-rich-menu-editor",
 	"compatibility_date": "2025-04-04",
 	"compatibility_flags": [
 		"nodejs_compat",
@@ -23,6 +23,12 @@
 			"database_name": "sample-db",
 			"database_id": "deb7ce46-968d-4f91-84b8-570548fde88d",
 			"migrations_dir": "./drizzle"
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "OGAWANOUEN_R2",
+			"bucket_name": "ogawanouen"
 		}
 	]
 	/**

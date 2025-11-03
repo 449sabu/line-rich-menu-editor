@@ -55,3 +55,26 @@ D1データベースに反映するまでの手順
 
 ### Middleware
 React Router の [Middleware](https://reactrouter.com/how-to/middleware) を参照
+
+
+## プロジェクトの初めかた
+1. 以下のコマンドで`.dev.vars`の作成とpackageのインストール、Env型の作成を同時に行います。
+```bash
+pnpm run setup
+```
+
+2. D1データベースを作成します。
+   新しいD1データベースを作成したら、古いデータベースは削除する。
+```bash
+wrangler d1 create <DATABASE_NAME>
+```
+
+3. 以下のコマンドでデータベースの型をEnv型に追加します。
+```bash
+pnpm run typecheck
+```
+
+4. ローカルにbetter-authのデータベースを作成する
+```bash
+pnpm migrate:local
+```
