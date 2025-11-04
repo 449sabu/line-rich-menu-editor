@@ -8,7 +8,7 @@ export default [
 			layout('routes/user/layout.tsx', [
 				route('/dashboard', 'routes/user/dashboard.tsx'),
 				route('/settings', 'routes/user/settings.tsx'),
-				route('/rich-menu', 'routes/user/rich-menu.tsx'),
+				route('/rich-menu', 'routes/user/line.tsx'),
 			]),
 		]),
 		layout('routes/auth/layout.tsx', [
